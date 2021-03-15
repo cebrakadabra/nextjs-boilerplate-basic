@@ -1,0 +1,71 @@
+@import "../styles/constants.less";
+
+.footer-container {
+    width: 100%;
+    height: auto;
+    background: @footer-color;
+    padding-bottom: 25px;
+
+    @media screen and (min-width: @max-width) {
+        height: @footer-height;
+        padding-bottom: unset;
+    }
+
+    &--inner {
+        max-width: @max-width;
+        width: 100%;
+        margin: 0 auto;
+
+        @media screen and (min-width: @max-width) {
+            width: @max-width;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+
+            @media screen and (min-width: @max-width) {
+                flex-wrap: unset;
+            }
+
+            li.footer-container--inner-item {
+                flex-basis: 100%;
+                text-align: left;
+                padding-top: 25px;
+                color: #aaaaaa;
+                font-weight: bold;
+                font-size: 12px;
+                padding-left: 15px;
+
+                @media screen and (min-width: @max-width) {
+                    flex-basis: unset;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+
+                a {
+                    color: #fff;
+                    font-weight: bold;
+                    text-decoration: none;
+                    font-size: 12px;
+
+                    &:visited {
+
+                    }
+
+                    &:focus {
+
+                    }
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+
+            }
+        }
+    }
+}
