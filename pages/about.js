@@ -4,7 +4,7 @@ import axios from 'axios';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-import 'about.less';
+import './about.less';
 
 export default function About() {
     const [stateData, setStateData] = React.useState(null);
@@ -21,8 +21,22 @@ export default function About() {
     return (
         <div>
             <Header />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <h1>About Page</h1>
             <pre>{JSON.stringify(stateData, undefined, 2)}</pre>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <Footer />
         </div>
     )
